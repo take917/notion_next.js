@@ -5,7 +5,7 @@ import Link from "next/link";
 import Card from "../components/Card";
 import Layout from "../components/Layout";
 import { siteConfig } from "../site.config";
-import { sampleCards } from "../utiles/sample";
+import { sampleCards } from "../utils/sample";
 
 const Home: NextPage = () => {
   return (
