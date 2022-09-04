@@ -10,7 +10,6 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { slug } = ctx.params as Params;
 
   const page = sampleCards.find((data) => data.slug === slug);
-
   return {
     props: {
       page: page,
@@ -24,11 +23,12 @@ const Article: NextPage<ArticleProps> = ({ page }) => {
       <article className="w-full">
         {/* meta section */}
         <div className="my-12">
+          {/* page cover */}
           <ArticleMeta page={page} />
         </div>
 
         {/* article */}
-        <div className="my-12">article {page.content}</div>
+        <div className="my-12">article {page.id}</div>
       </article>
     </Layout>
   );

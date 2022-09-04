@@ -5,7 +5,6 @@ import { ArticleMetaProps } from "../types/types";
 const ArticleMeta: FC<ArticleMetaProps> = ({ page }) => {
   return (
     <>
-      {/* page cover */}
       <Image
         className="w-full max-w-screen-lg rounded-lg aspect-video my-4"
         src={page.cover}
@@ -33,7 +32,7 @@ const ArticleMeta: FC<ArticleMetaProps> = ({ page }) => {
           <div className="col-span-2">
             {/* change later */}
             {page.tags.map((tag: string, index: number) => (
-              <span key={index}>{`#${tag} `}</span>
+              <span key={index}>{`#${tag}`}</span>
             ))}
           </div>
         </div>
